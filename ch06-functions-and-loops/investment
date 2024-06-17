@@ -1,0 +1,11 @@
+
+
+def invest(amount, rate, years):
+    revenue = amount * (1 + rate)**years
+    return revenue
+
+amount = float(input("Amount: "))
+rate = float(input('rate: '))
+time = float(input('time in years: '))
+
+print(f'if you would invest {amount} at APR of {rate} for {time} years your renenue would be {invest(amount, rate, time)}')
